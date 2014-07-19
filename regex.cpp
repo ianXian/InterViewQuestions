@@ -28,7 +28,7 @@ bool is_match_here(const string &r, const string &s)
 	{
 		for (int i = 0; i < s.size() && (r.front() == '.' || r.front() == s[i]); ++i)
 		{
-			if (is_match_here(r.substr(2), s.substr(i + 1)))
+			if (is_match_here(r.substr(2), s.substr(i + 1))) //match i+1 times
 				return true;
 		}
 		return is_match_here(r.substr(2), s); //r[0] shows 0 times
