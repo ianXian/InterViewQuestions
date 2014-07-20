@@ -59,9 +59,9 @@ bool is_match(const string &r, const string &s)
 int main(int argc, char* argv[])
 {
 
-	string reg = "*bc";
+	string reg = "a*bc";
 
-	string s = "ceda124545bc";
+	string s = "d124545bc";
 
 	cout << is_match(reg, s) << endl;
 
